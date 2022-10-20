@@ -25,13 +25,13 @@ int _printf(const char *format, ...)
 			{
 				if (format[i + 1] == '%')
 				{
-					count += _putchar(format[i+1]);
+					count += _putchar(format[i + 1]);
 					i++;
 				}
 				else if (format[i + 1] != '\0')
 				{
 					f = get_func(format[i + 1]);
-					if(f != NULL)
+					if (f != NULL)
 						count += f(valist);
 					else
 					{
