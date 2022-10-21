@@ -25,4 +25,5 @@ int print_c(va_list valist);
 int print_s(va_list valist);
 int print_d(va_list ar_list);
 int print_i(va_list ar_list);
+int print_b(va_list binary_list);
 #endif
