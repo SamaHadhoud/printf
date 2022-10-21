@@ -25,7 +25,7 @@ int print_s(va_list valist)
 
 	str = va_arg(valist, char *);
 	if (str == NULL)
-		str = "(null)";
+		str = "(nil)";
 	for (i = 0; str[i]; i++)
 		count += _putchar(str[i]);
 	return (count);
