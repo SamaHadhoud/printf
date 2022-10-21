@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int count;
+	int count = -1;
 
 	if (format != NULL)
 	{
