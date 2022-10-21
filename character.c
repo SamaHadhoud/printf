@@ -2,7 +2,7 @@
 
 /**
  * print_c - Print a character (%c)
- * @valist: Store the a list of characters
+ * @valist: Store the  list of characters
  * Return: number of characters printed
  */
 
@@ -25,7 +25,7 @@ int print_s(va_list valist)
 
 	str = va_arg(valist, char *);
 	if (str == NULL)
-		str = "(nil)";
+		str = "(null)";
 	for (i = 0; str[i]; i++)
 		count += _putchar(str[i]);
 	return (count);
